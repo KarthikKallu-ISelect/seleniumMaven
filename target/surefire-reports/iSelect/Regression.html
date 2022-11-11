@@ -1,0 +1,2273 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>279/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 20 16:26:02 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>4625 seconds (4625668 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCarLoansInBottomMenu()'><b>testclickOnCarLoansInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8336aa8f505d62a7823719acd1f5344c, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53195/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8336aa8f505d62a7823719acd1f5344c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnCarLoansInBottomMenu(GlobalHomePage.java:3871)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCarLoansInBottomMenu(GlobalHomePageTest.java:1691)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace932281008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace932281008'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8336aa8f505d62a7823719acd1f5344c, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53195/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8336aa8f505d62a7823719acd1f5344c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnCarLoansInBottomMenu(GlobalHomePage.java:3871)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCarLoansInBottomMenu(GlobalHomePageTest.java:1691)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>34</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCreditCardsInBottomMenu()'><b>testclickOnCreditCardsInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a599e8c912e5e6076ba9a43e32c754b, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54622/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a599e8c912e5e6076ba9a43e32c754b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnCreditCardsInBottomMenu(GlobalHomePage.java:3889)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCreditCardsInBottomMenu(GlobalHomePageTest.java:1697)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace640929030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640929030'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a599e8c912e5e6076ba9a43e32c754b, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54622/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a599e8c912e5e6076ba9a43e32c754b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnCreditCardsInBottomMenu(GlobalHomePage.java:3889)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCreditCardsInBottomMenu(GlobalHomePageTest.java:1697)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>34</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPersonalLoansInBottomMenu()'><b>testclickOnPersonalLoansInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d1887d89730044e8052a43f459e909d, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60758/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1887d89730044e8052a43f459e909d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnPersonalLoansInBottomMenu(GlobalHomePage.java:3877)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnPersonalLoansInBottomMenu(GlobalHomePageTest.java:1685)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252667276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252667276'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d1887d89730044e8052a43f459e909d, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60758/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1887d89730044e8052a43f459e909d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnPersonalLoansInBottomMenu(GlobalHomePage.java:3877)
+	at com.iselect.tests.GlobalHomePageTest.testclickOnPersonalLoansInBottomMenu(GlobalHomePageTest.java:1685)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>34</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPersonalLoansFinanceButtonHover()'><b>testPersonalLoansFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Personal Loans*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e450c0c019ca1868d8eefd0aa6487d54, findElement {using=xpath, value=//h1[text()=&apos;Compare Personal Loans*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62866/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e450c0c019ca1868d8eefd0aa6487d54
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyPersonalLoansFinanceButton(GlobalHomePage.java:1167)
+	at com.iselect.tests.GlobalHomePageTest.testPersonalLoansFinanceButtonHover(GlobalHomePageTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256340426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256340426'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Personal Loans*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e450c0c019ca1868d8eefd0aa6487d54, findElement {using=xpath, value=//h1[text()=&apos;Compare Personal Loans*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62866/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e450c0c019ca1868d8eefd0aa6487d54
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyPersonalLoansFinanceButton(GlobalHomePage.java:1167)
+	at com.iselect.tests.GlobalHomePageTest.testPersonalLoansFinanceButtonHover(GlobalHomePageTest.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>35</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLinkedInLink()'><b>testLinkedInLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;At iSelect&apos;)]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b368ba3b3e7a667415ddf63165fcf5f, findElement {using=xpath, value=//p[contains(text(),&apos;At iSelect&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61631/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b368ba3b3e7a667415ddf63165fcf5f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnLinkedIn(GlobalHomePage.java:2340)
+	at com.iselect.tests.GlobalHomePageTest.testLinkedInLink(GlobalHomePageTest.java:747)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace822490173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace822490173'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;At iSelect&apos;)]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b368ba3b3e7a667415ddf63165fcf5f, findElement {using=xpath, value=//p[contains(text(),&apos;At iSelect&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61631/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b368ba3b3e7a667415ddf63165fcf5f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickOnLinkedIn(GlobalHomePage.java:2340)
+	at com.iselect.tests.GlobalHomePageTest.testLinkedInLink(GlobalHomePageTest.java:747)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>33</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenTravelInsuranceBtnInit()'><b>testInsuranceBtnThenTravelInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=96.0.4664.110)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82b6fbb38782750b6203a36a79e538c4, clickElement {id=c58aaa4c-e7dc-4db0-ace7-553db0005aa9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60120/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (82b6fbb38782750b6203a36a79e538c4)] -&gt; xpath: //a[normalize-space()=&apos;Travel&apos;]]
+Session ID: 82b6fbb38782750b6203a36a79e538c4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at org.openqa.selenium.support.decorators.$Proxy22.click(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickInsuranceBtnThenTravelInsuranceBtn(GlobalHomePage.java:1394)
+	at com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenTravelInsuranceBtnInit(GlobalHomePageTest.java:217)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744182330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1744182330'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=96.0.4664.110)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82b6fbb38782750b6203a36a79e538c4, clickElement {id=c58aaa4c-e7dc-4db0-ace7-553db0005aa9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60120/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (82b6fbb38782750b6203a36a79e538c4)] -&gt; xpath: //a[normalize-space()=&apos;Travel&apos;]]
+Session ID: 82b6fbb38782750b6203a36a79e538c4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at org.openqa.selenium.support.decorators.$Proxy22.click(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.clickInsuranceBtnThenTravelInsuranceBtn(GlobalHomePage.java:1394)
+	at com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenTravelInsuranceBtnInit(GlobalHomePageTest.java:217)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>32</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarLoansFinanceButtonHover()'><b>testCarLoansFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Car Loans*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da04c1f347b530792f951ff057ad2b6, findElement {using=xpath, value=//h1[text()=&apos;Compare Car Loans*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52097/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7da04c1f347b530792f951ff057ad2b6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyCarLoansFinanceButton(GlobalHomePage.java:1158)
+	at com.iselect.tests.GlobalHomePageTest.testCarLoansFinanceButtonHover(GlobalHomePageTest.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace876728220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876728220'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Car Loans*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da04c1f347b530792f951ff057ad2b6, findElement {using=xpath, value=//h1[text()=&apos;Compare Car Loans*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52097/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7da04c1f347b530792f951ff057ad2b6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyCarLoansFinanceButton(GlobalHomePage.java:1158)
+	at com.iselect.tests.GlobalHomePageTest.testCarLoansFinanceButtonHover(GlobalHomePageTest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>35</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCreditCardsBtnInFinanceButtonHover()'><b>testCreditCardsBtnInFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Credit Cards*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4840d748e87a826e49232b2c5f4ee37c, findElement {using=xpath, value=//h1[text()=&apos;Compare Credit Cards*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55600/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4840d748e87a826e49232b2c5f4ee37c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyCreditCardsInFinanceButton(GlobalHomePage.java:1185)
+	at com.iselect.tests.GlobalHomePageTest.testCreditCardsBtnInFinanceButtonHover(GlobalHomePageTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace766003190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace766003190'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Compare Credit Cards*&apos;]&quot;}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;A3864L&apos;, ip: &apos;10.5.5.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4840d748e87a826e49232b2c5f4ee37c, findElement {using=xpath, value=//h1[text()=&apos;Compare Credit Cards*&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55600/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4840d748e87a826e49232b2c5f4ee37c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:232)
+	at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+	at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:294)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at com.iselect.pages.GlobalHomePage.verifyCreditCardsInFinanceButton(GlobalHomePage.java:1185)
+	at com.iselect.tests.GlobalHomePageTest.testCreditCardsBtnInFinanceButtonHover(GlobalHomePageTest.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>35</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHomeLoansBtnInPopular()'><b>testHomeLoansBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTypesOfLifeInsuranceInLifeSection()'><b>testTypesOfLifeInsuranceInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompareLifeInsuranceBtnInLifeSection()'><b>testCompareLifeInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTipsForFirstTimeDrivers()'><b>testTipsForFirstTimeDrivers</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWhatIsDogInsurance()'><b>testclickOnWhatIsDogInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceSA()'><b>testCarInsuranceSA</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMakingAClaimAfterAccident()'><b>testMakingAClaimAfterAccident</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceNSW()'><b>testCarInsuranceNSW</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsCalcInLifeSection()'><b>testLifeInsCalcInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMovingHouseInBottomMenu()'><b>testclickOnMovingHouseInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHospitalWaitingPeriodsBtnInHealth()'><b>testHospitalWaitingPeriodsBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testUtilitiesBtnThenInternetBtnInit()'><b>testUtilitiesBtnThenInternetBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHealthInsurancePartnerOfYearImg()'><b>testHealthInsurancePartnerOfYearImg</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnHowToHandleHighElecBill()'><b>testClickOnHowToHandleHighElecBill</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnBusinessInBottomMenu()'><b>testclickOnBusinessInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnElecAndGasInBottomMenu()'><b>testclickOnElecAndGasInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEasyWaysToReduceElecBill()'><b>testclickOnEasyWaysToReduceElecBill</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceGlossary()'><b>testCarInsuranceGlossary</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testSwitchingCarInsurancebtn()'><b>testSwitchingCarInsurancebtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPregnancyAndNewBornCoverBtnInHealth()'><b>testPregnancyAndNewBornCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testFamilyCoverBtnInHealth()'><b>testFamilyCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testReadMoreButtonOnLHCLoadingTile()'><b>testReadMoreButtonOnLHCLoadingTile</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>10</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testSinglesCoverBtnInHealth()'><b>testSinglesCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnBroadBandPlansBtn()'><b>testclickOnBroadBandPlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMobilePhoneTipsBtn()'><b>testclickOnMobilePhoneTipsBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMovingHouseBtnInHomeAndContents()'><b>testMovingHouseBtnInHomeAndContents</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsuranceGlossary()'><b>testLifeInsuranceGlossary</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMLCIncomeProtection()'><b>testMLCIncomeProtection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testReadMoreButtonOnFindingSuitableInsCoverTile()'><b>testReadMoreButtonOnFindingSuitableInsCoverTile</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenLifeInsuranceBtnInit()'><b>testInsuranceBtnThenLifeInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testRefinancehomeloans()'><b>testRefinancehomeloans</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnwhatIsCatInsurance()'><b>testclickOnwhatIsCatInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testAmbulanceCoverBtnInHealth()'><b>testAmbulanceCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsuranceBtnInPopular()'><b>testLifeInsuranceBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnNBNPlansBtn()'><b>testclickOnNBNPlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMovingWithYourPartner()'><b>testclickOnMovingWithYourPartner</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testUtilitiesBtnThenMobilePlansBtnInit()'><b>testUtilitiesBtnThenMobilePlansBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnFindTheBestEnergyPlan()'><b>testclickOnFindTheBestEnergyPlan</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHomeLoanAppCheckListbtn()'><b>testclickOnHomeLoanAppCheckListbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnBenefitsOfHavingOVC()'><b>testclickOnBenefitsOfHavingOVC</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPrivacyPolicy()'><b>testclickOnPrivacyPolicy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIncomeProtectionCalcInLifeSection()'><b>testIncomeProtectionCalcInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCheapInternetBtn()'><b>testclickOnCheapInternetBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIncomeProtectionInsurancevsMortgageProtection()'><b>testIncomeProtectionInsurancevsMortgageProtection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHeadersInMainPage()'><b>testHeadersInMainPage</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>13</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHomeLoansFinanceButton()'><b>testHomeLoansFinanceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnHowDoEnergyDiscountsWork()'><b>testClickOnHowDoEnergyDiscountsWork</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnAHomeOwnersGuideToHomeAndContentsInsurance()'><b>testclickOnAHomeOwnersGuideToHomeAndContentsInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetProvidersBtn()'><b>testclickOnInternetProvidersBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHomeAndContentsInBottomMenu()'><b>testclickOnHomeAndContentsInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnGetRightVetForYourPet()'><b>testclickOnGetRightVetForYourPet</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnReviewingPetInsurance()'><b>testclickOnReviewingPetInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickShouldIUseMortagageBrokerbtn()'><b>testclickShouldIUseMortagageBrokerbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testFindingBestTravelInsurance()'><b>testFindingBestTravelInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.clickOnSwitchingElecProviders()'><b>clickOnSwitchingElecProviders</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWirelessInternetPlansBtn()'><b>testclickOnWirelessInternetPlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testComprehensiveExplainedbtnInCarHover()'><b>testComprehensiveExplainedbtnInCarHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickFirstHomeBuyersbtn()'><b>testclickFirstHomeBuyersbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCommInsureIncomeProtection()'><b>testCommInsureIncomeProtection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTrustPilotReviewsInMainPage()'><b>testTrustPilotReviewsInMainPage</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>51</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceQLD()'><b>testCarInsuranceQLD</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetPlansBtn()'><b>testclickOnInternetPlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparison()'><b>testclickOnEnergyComparison</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickFixedVsVariableInterestbtn()'><b>testclickFixedVsVariableInterestbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnAusisEnergyQuotes()'><b>testclickOnAusisEnergyQuotes</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnViewBasicPlanInfo()'><b>testclickOnViewBasicPlanInfo</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>13</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.test411ExchangeVisa()'><b>test411ExchangeVisa</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnFindACheaperEnergyPlan()'><b>testclickOnFindACheaperEnergyPlan</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIncomeProtectionThroughSuperannuation()'><b>testIncomeProtectionThroughSuperannuation</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.test405InvestorRetirementVisa()'><b>test405InvestorRetirementVisa</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPublicLiabilityInsuranceBtn()'><b>testPublicLiabilityInsuranceBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetSpeedBtn()'><b>testclickOnInternetSpeedBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnCompareIncomeProtectionButton()'><b>testClickOnCompareIncomeProtectionButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testProfessionalIndemnityinsurance()'><b>testProfessionalIndemnityinsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenHealthInsuranceBtnInit()'><b>testInsuranceBtnThenHealthInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnChooseRightNBNPlan()'><b>testclickOnChooseRightNBNPlan</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testOverseasCoverInsuranceButton()'><b>testOverseasCoverInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCarInBottomMenu()'><b>testclickOnCarInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>10</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnLifeInBottomMenu()'><b>testclickOnLifeInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testScheduleACallBtnInHealth()'><b>testScheduleACallBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testWhyLifeInsuranceBtnInLifeSection()'><b>testWhyLifeInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompulsoryThirdPartyCTPInCarHover()'><b>testCompulsoryThirdPartyCTPInCarHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWirelessInternetBtn()'><b>testclickOnWirelessInternetBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testExtraRepaymentBtn()'><b>testExtraRepaymentBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnIamMovingBtn()'><b>testclickOnIamMovingBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompareTravelInsuranceBtn()'><b>testCompareTravelInsuranceBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnOverseasVisitorCoverInBottomMenu()'><b>testclickOnOverseasVisitorCoverInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnRenewableEnergy()'><b>testclickOnRenewableEnergy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIncomeProtectionBtnInPopular()'><b>testIncomeProtectionBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTaxImplicationsBtnInHealth()'><b>testTaxImplicationsBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>19</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparisonVIC()'><b>testclickOnEnergyComparisonVIC</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWhatIsADSLAndADSLTwoPlus()'><b>testclickOnWhatIsADSLAndADSLTwoPlus</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnADSLTwoPlusBtn()'><b>testclickOnADSLTwoPlusBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHowIselectWork()'><b>testHowIselectWork</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnNakedDSLBtn()'><b>testclickOnNakedDSLBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCouplesCoverBtnInHealth()'><b>testCouplesCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickInterestOnlyHomeLoansbtn()'><b>testclickInterestOnlyHomeLoansbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHydroElec()'><b>testclickOnHydroElec</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPublicLiabilityInsuranceBtnInWA()'><b>testPublicLiabilityInsuranceBtnInWA</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testiSelectPartnerOfYearText()'><b>testiSelectPartnerOfYearText</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testUtilitiesBtnThenMovingHouseBtnInit()'><b>testUtilitiesBtnThenMovingHouseBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInsuranceForRenters()'><b>testclickOnInsuranceForRenters</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnProvidersBtn()'><b>testclickOnProvidersBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHealthInsuranceClaimsProcessBtnInHealth()'><b>testHealthInsuranceClaimsProcessBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPhoneAndInternetBundlesBtn()'><b>testclickOnPhoneAndInternetBundlesBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnOperatingSystemsBtn()'><b>testclickOnOperatingSystemsBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testElecAndGasBtnInPopular()'><b>testElecAndGasBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetGlossaryBtn()'><b>testclickOnInternetGlossaryBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnElectricityProviders()'><b>testclickOnElectricityProviders</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testBenefitsofbeingaprivatepatientBtnInHealth()'><b>testBenefitsofbeingaprivatepatientBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testReadMoreButtonOnAmbulanceCoverTile()'><b>testReadMoreButtonOnAmbulanceCoverTile</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>12</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnOverseasVisitorHealthInsurance()'><b>testclickOnOverseasVisitorHealthInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPregnancyAndHealthInsuranceBtnInHealth()'><b>testPregnancyAndHealthInsuranceBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTALIncomeProtection()'><b>testTALIncomeProtection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickTermsAndConditions()'><b>testclickTermsAndConditions</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsuranceVsIncomeProtBtnInLifeSection()'><b>testLifeInsuranceVsIncomeProtBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparisonQLD()'><b>testclickOnEnergyComparisonQLD</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHomeAndContentsInsuranceFAQS()'><b>testclickOnHomeAndContentsInsuranceFAQS</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnAgreedVsMarketValueCarInsurance()'><b>testClickOnAgreedVsMarketValueCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testStampDutyBtn()'><b>testStampDutyBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testDirectLifeInsurance()'><b>testDirectLifeInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnSolarEnergy()'><b>testclickOnSolarEnergy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTipsForBuyingCarInsurance()'><b>testTipsForBuyingCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergySavingTips()'><b>testclickOnEnergySavingTips</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnOVCInCompareOptions()'><b>testclickOnOVCInCompareOptions</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickStampDutyCalcBtn()'><b>testclickStampDutyCalcBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenCarInsuranceBtnInit()'><b>testInsuranceBtnThenCarInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickingSwitchingElectricityProvidersText()'><b>testClickingSwitchingElectricityProvidersText</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsFAQsBtnInLifeSection()'><b>testLifeInsFAQsBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testReadMoreButtonOnPrivateHospitalCoverTile()'><b>testReadMoreButtonOnPrivateHospitalCoverTile</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>11</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testfindASuitableLifeInsPolicyInLifeSection()'><b>testfindASuitableLifeInsPolicyInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPersonalAccidentInsurance()'><b>testclickOnPersonalAccidentInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceTasmania()'><b>testCarInsuranceTasmania</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTraumaInsuranceBtnInLifeSection()'><b>testTraumaInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternationalTravelInsurance()'><b>testclickOnInternationalTravelInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPublicLiabilityInsuranceBtnInNSW()'><b>testPublicLiabilityInsuranceBtnInNSW</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenHomeAndContentsInsuranceBtnInit()'><b>testInsuranceBtnThenHomeAndContentsInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnmobileBroadbandBtn()'><b>testclickOnmobileBroadbandBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCompareBroadbandBtn()'><b>testclickOnCompareBroadbandBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.test417WorkingHolidayVisa()'><b>test417WorkingHolidayVisa</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnBestIncomeProtectionCover()'><b>testClickOnBestIncomeProtectionCover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTwitterLink()'><b>testTwitterLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHospitalCoverBtnInHealth()'><b>testHospitalCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLendersMortgageInsuranceAustralia()'><b>testLendersMortgageInsuranceAustralia</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHighSpeedInternetPlans()'><b>testclickOnHighSpeedInternetPlans</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWhatIsPetInsurance()'><b>testclickOnWhatIsPetInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testKeyPersonInsuranceBtnInLifeSection()'><b>testKeyPersonInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHowToPurchaseOvc()'><b>testclickOnHowToPurchaseOvc</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testWhatIsLifeInsuranceBtnInLifeSection()'><b>testWhatIsLifeInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnContentsInsurance()'><b>testclickOnContentsInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHowInterestRatesAffectYourHomeLoanbtn()'><b>testHowInterestRatesAffectYourHomeLoanbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenBusinessInsuranceBtnInit()'><b>testInsuranceBtnThenBusinessInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPermanentResidencyExplained()'><b>testclickOnPermanentResidencyExplained</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMediaCenterLink()'><b>testMediaCenterLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnTenTipsForFinanciallySavyRenovatersbtn()'><b>testclickOnTenTipsForFinanciallySavyRenovatersbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testBusinessLoansFinanceButtonHover()'><b>testBusinessLoansFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWindEnergy()'><b>testclickOnWindEnergy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPublicLiabilityInsuranceBtnInQLD()'><b>testPublicLiabilityInsuranceBtnInQLD</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparisonACT()'><b>testclickOnEnergyComparisonACT</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testComprehensiveCarInsurance()'><b>testComprehensiveCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparisonSA()'><b>testclickOnEnergyComparisonSA</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTypesOfcarInsurancebtn()'><b>testTypesOfcarInsurancebtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMedicalLevySurchargeBtnInHealth()'><b>testMedicalLevySurchargeBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMobilePlansUtilityBtn()'><b>testMobilePlansUtilityBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnDebtConsolidationbtn()'><b>testclickOnDebtConsolidationbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceForTradies()'><b>testInsuranceForTradies</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifetimeHealthCoverLoadingBtnInHealth()'><b>testLifetimeHealthCoverLoadingBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHowMuchDataBtn()'><b>testclickOnHowMuchDataBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnAnnualTravelInsurance()'><b>testclickOnAnnualTravelInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHealthInsuranceButton()'><b>testHealthInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHowToPurchaseLifeInsBtnInLifeSection()'><b>testHowToPurchaseLifeInsBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnFindEnergyFactsSheet()'><b>testclickOnFindEnergyFactsSheet</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>13</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testExtrasCoverBtnInHealth()'><b>testExtrasCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>10</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickVariableRateHomeLoansbtn()'><b>testclickVariableRateHomeLoansbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnTenMortagageRepaybtn()'><b>testclickOnTenMortagageRepaybtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickPropertyInvestmentbtn()'><b>testclickPropertyInvestmentbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testAllHomeLoanCalculators()'><b>testAllHomeLoanCalculators</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnUnderstandingMobileGargonsBtn()'><b>testclickOnUnderstandingMobileGargonsBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnChoosingRightVisitorCover()'><b>testclickOnChoosingRightVisitorCover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testWhyTimeSeemsToFlyAsWeGetOlder()'><b>testWhyTimeSeemsToFlyAsWeGetOlder</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPublicLiabilityInsuranceBtnInSA()'><b>testPublicLiabilityInsuranceBtnInSA</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOn3gVs4gBtn()'><b>testclickOn3gVs4gBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnAusisBridgingVisaExplained()'><b>testclickOnAusisBridgingVisaExplained</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTravelInsuranceButton()'><b>testTravelInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnSecuredBusinessLoans()'><b>testClickOnSecuredBusinessLoans</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHowMuchCanIBorrowbtn()'><b>testclickOnHowMuchCanIBorrowbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testSwitchingHealthInsuranceBtnInHealth()'><b>testSwitchingHealthInsuranceBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnNBNBtn()'><b>testclickOnNBNBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickingWhatIsLifeInsuranceText()'><b>testClickingWhatIsLifeInsuranceText</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMakeTheMostOfFreedomYearsInsuranceBtnInLifeSection()'><b>testMakeTheMostOfFreedomYearsInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnWhatIsHomeAndContentsbutton()'><b>testClickOnWhatIsHomeAndContentsbutton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceBtnInPopular()'><b>testCarInsuranceBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPolicyDetails()'><b>testclickOnPolicyDetails</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInvestorCentreLink()'><b>testInvestorCentreLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickingReadMoreLinkEnergy()'><b>testClickingReadMoreLinkEnergy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testYoutubeLink()'><b>testYoutubeLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnClaimingHomeAndContents()'><b>testclickOnClaimingHomeAndContents</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testLifeInsuranceButton()'><b>testLifeInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testAusisGovtRebateBtnInHealth()'><b>testAusisGovtRebateBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCruiseTravelInsurance()'><b>testclickOnCruiseTravelInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompareBusinessInsuranceBtn()'><b>testCompareBusinessInsuranceBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnComparePetInsurance()'><b>testclickOnComparePetInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnOverseasStudentHealthCover()'><b>testclickOnOverseasStudentHealthCover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnPetInBottomMenu()'><b>testclickOnPetInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnConnectingToNBNPlan()'><b>testclickOnConnectingToNBNPlan</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testOurCompanyLink()'><b>testOurCompanyLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInternetUtilityBtn()'><b>testInternetUtilityBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnDomesticTravelInsurance()'><b>testclickOnDomesticTravelInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testUtilitiesBtnThenElecAndGasBtnInit()'><b>testUtilitiesBtnThenElecAndGasBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCostOfOwingAPetInsurance()'><b>testclickOnCostOfOwingAPetInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnTravelInBottomMenu()'><b>testclickOnTravelInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnEnergyComparisonNSW()'><b>testclickOnEnergyComparisonNSW</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testEquipmentLoansandFinancing()'><b>testEquipmentLoansandFinancing</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMobilePlansInBottomMenu()'><b>testclickOnMobilePlansInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testElecAndGasUtilityBtn()'><b>testElecAndGasUtilityBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenPetInsuranceBtnInit()'><b>testInsuranceBtnThenPetInsuranceBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHomeLoanCalc()'><b>testclickOnHomeLoanCalc</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHomeAndContentsInsuranceButton()'><b>testHomeAndContentsInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMovingHouseBtnInFinanceButtonHover()'><b>testMovingHouseBtnInFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMakeYourNextHouseMoveQuick()'><b>testclickOnMakeYourNextHouseMoveQuick</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnMovingHouseMakeItEasy()'><b>testclickOnMovingHouseMakeItEasy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnFindHomeAndContentsbutton()'><b>testClickOnFindHomeAndContentsbutton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>10</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnWaitingPeriods()'><b>testclickOnWaitingPeriods</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testTPDInsuranceBtnInLifeSection()'><b>testTPDInsuranceBtnInLifeSection</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testDoINeedCarInsurance()'><b>testDoINeedCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenOverseasVisitorCoverBtnInit()'><b>testInsuranceBtnThenOverseasVisitorCoverBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnIncomeProtInBottomMenu()'><b>testclickOnIncomeProtInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnLandlordInsurance()'><b>testclickOnLandlordInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompareBusinessLoansBtn()'><b>testCompareBusinessLoansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>11</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testPetInsuranceButton()'><b>testPetInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnVisaReq()'><b>testclickOnVisaReq</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnFindingBestCarInsurance()'><b>testClickOnFindingBestCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnBusinessLoansInBottomMenu()'><b>testclickOnBusinessLoansInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnReciprocalHealthCareAgreements()'><b>testclickOnReciprocalHealthCareAgreements</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickCompareCarInsBtn()'><b>testClickCompareCarInsBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCareersLink()'><b>testCareersLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIsHealthInsuranceWorthHaving()'><b>testIsHealthInsuranceWorthHaving</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceVictoria()'><b>testCarInsuranceVictoria</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickFixedRateHomeLoansbtn()'><b>testclickFixedRateHomeLoansbtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnSaveElectricity()'><b>testclickOnSaveElectricity</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testReadMoreButtonOnHealthFundsCoverTile()'><b>testReadMoreButtonOnHealthFundsCoverTile</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnChattelMortgage()'><b>testClickOnChattelMortgage</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickIsIncomeProtectionInsuranceTaxDeductibleBtn()'><b>testClickIsIncomeProtectionInsuranceTaxDeductibleBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testContactUsLink()'><b>testContactUsLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testSavingOnCarInsurancebtn()'><b>testSavingOnCarInsurancebtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetInBottomMenu()'><b>testclickOnInternetInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCyberLiabilityInsurance()'><b>testCyberLiabilityInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHomeLoansInBottomMenu()'><b>testclickOnHomeLoansInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnInternetDealsBtn()'><b>testclickOnInternetDealsBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnUnSecuredBusinessLoans()'><b>testClickOnUnSecuredBusinessLoans</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenIncomeProtectionBtnInit()'><b>testInsuranceBtnThenIncomeProtectionBtnInit</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testGetConnectedAtYourNewHomeBtn()'><b>testGetConnectedAtYourNewHomeBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testDentalCoverBtnInHealth()'><b>testDentalCoverBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testComprehensivevsThirdPartyInCarHover()'><b>testComprehensivevsThirdPartyInCarHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCompareMobilePlansBtn()'><b>testclickOnCompareMobilePlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testMovingHouseBtnInCar()'><b>testMovingHouseBtnInCar</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHealthInsuranceGlossary()'><b>testHealthInsuranceGlossary</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCompareHealthInsuranceBtnInHealth()'><b>testCompareHealthInsuranceBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testBusinessInsuranceButton()'><b>testBusinessInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnDisclaimer()'><b>testclickOnDisclaimer</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testBorrowingPowerCalc()'><b>testBorrowingPowerCalc</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCableInternetPlansBtn()'><b>testclickOnCableInternetPlansBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnCompareElecAndGasBtn()'><b>testclickOnCompareElecAndGasBtn</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testIncomeProtectionBtnInFinanceButtonHover()'><b>testIncomeProtectionBtnInFinanceButtonHover</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testScheduleAcallBtnInBusinessLoans()'><b>testScheduleAcallBtnInBusinessLoans</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testFaceBookLink()'><b>testFaceBookLink</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickingReadMoreLinkLife()'><b>testClickingReadMoreLinkLife</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceACT()'><b>testCarInsuranceACT</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testFindingTheRightHealthInsurance()'><b>testFindingTheRightHealthInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testInternetBtnInPopular()'><b>testInternetBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnBenefitsOfSolarEnergy()'><b>testClickOnBenefitsOfSolarEnergy</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testClickOnBusinessOverdraft()'><b>testClickOnBusinessOverdraft</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testWhyHealthInsuranceBtnInHealth()'><b>testWhyHealthInsuranceBtnInHealth</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnHealthInBottomMenu()'><b>testclickOnHealthInBottomMenu</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.test416SpecialProgramVisa()'><b>test416SpecialProgramVisa</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testHealthInsuranceBtnInPopular()'><b>testHealthInsuranceBtnInPopular</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testSeniorsCarInsurance()'><b>testSeniorsCarInsurance</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testclickOnChooseRightBroadbandPlan()'><b>testclickOnChooseRightBroadbandPlan</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+<tr>
+<td title='com.iselect.tests.GlobalHomePageTest.testCarInsuranceButton()'><b>testCarInsuranceButton</b><br>Test class: com.iselect.tests.GlobalHomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.iselect.tests.GlobalHomePageTest@f1da57d</td></tr>
+</table><p>
+</body>
+</html>

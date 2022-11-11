@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+
+<configuration>
+
+<!-- report theme -->
+
+<!-- standard, dark -->
+
+<theme>dark</theme>
+
+<!-- document encoding -->
+
+<!-- defaults to UTF-8 -->
+
+<encoding>UTF-8</encoding>
+
+<!-- protocol for script and stylesheets -->
+
+<!-- defaults to https -->
+
+<protocol>https</protocol>
+
+<!-- title of the document -->
+
+<documentTitle>ISelect Wordpress Automation status report</documentTitle>
+
+<!-- report headline - displayed at top-nav, after reportHeadline -->
+
+<reportHeadline>Wordpress automation</reportHeadline>
+
+<!-- global date format override -->
+
+<!-- defaults to yyyy-MM-dd -->
+
+<dateFormat>yyyy-MM-dd</dateFormat>
+
+<!-- global time format override -->
+
+<!-- defaults to HH:mm:ss -->
+
+<timeFormat>HH:mm:ss</timeFormat>
+
+<reportName>
+
+<![CDATA[
+
+<img src="https://www.iselect.com.au/content/themes/iselect/assets/images/menu-nav/logo-new.svg" alt="iselect logo" width="80" height="80">>
+
+]]>
+
+</reportName>
+
+<scripts>
+
+<![CDATA[
+
+$(document).ready(function() {
+
+$("div.logo").hide();
+$('#parentWithoutNodes').prop("checked", true).click();
+$('#test-count-setting > div.modal-footer > a')[0].click();
+
+});
+
+
+]]>
+
+</scripts>
+
+<!-- custom styles -->
+
+<styles>
+
+<![CDATA[
+
+]]>
+
+</styles>
+
+<styles>
+
+<![CDATA[
+
+.report-name > img { float:none;height: 90%;margin-left: 0px;margin-top: 2px;width: auto; }
+
+]]>
+
+</styles>
+
+</configuration>
+
+</extentreports>

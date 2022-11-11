@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="iSelect" parallel="tests" thread-count="3">
+	
+	<listeners>
+		<listener
+			class-name="com.iselect.utils.AnnotationTransformer" />
+	</listeners>
+	<test name="Regression">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.iselect.tests.GlobalHomePageTest" />
+		</classes>
+	</test>
+</suite>

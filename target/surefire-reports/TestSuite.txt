@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 287, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 4,626.859 s <<< FAILURE! - in TestSuite
+com.iselect.tests.GlobalHomePageTest.testCarLoansFinanceButtonHover  Time elapsed: 35.569 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Compare Car Loans*']"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7da04c1f347b530792f951ff057ad2b6, findElement {using=xpath, value=//h1[text()='Compare Car Loans*']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52097/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7da04c1f347b530792f951ff057ad2b6
+	at com.iselect.tests.GlobalHomePageTest.testCarLoansFinanceButtonHover(GlobalHomePageTest.java:85)
+
+com.iselect.tests.GlobalHomePageTest.testCreditCardsBtnInFinanceButtonHover  Time elapsed: 35.651 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Compare Credit Cards*']"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4840d748e87a826e49232b2c5f4ee37c, findElement {using=xpath, value=//h1[text()='Compare Credit Cards*']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55600/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4840d748e87a826e49232b2c5f4ee37c
+	at com.iselect.tests.GlobalHomePageTest.testCreditCardsBtnInFinanceButtonHover(GlobalHomePageTest.java:103)
+
+com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenTravelInsuranceBtnInit  Time elapsed: 32.168 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: headless chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82b6fbb38782750b6203a36a79e538c4, clickElement {id=c58aaa4c-e7dc-4db0-ace7-553db0005aa9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60120/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (82b6fbb38782750b6203a36a79e538c4)] -> xpath: //a[normalize-space()='Travel']]
+Session ID: 82b6fbb38782750b6203a36a79e538c4
+	at com.iselect.tests.GlobalHomePageTest.testInsuranceBtnThenTravelInsuranceBtnInit(GlobalHomePageTest.java:217)
+
+com.iselect.tests.GlobalHomePageTest.testLinkedInLink  Time elapsed: 33.881 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'At iSelect')]"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b368ba3b3e7a667415ddf63165fcf5f, findElement {using=xpath, value=//p[contains(text(),'At iSelect')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61631/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b368ba3b3e7a667415ddf63165fcf5f
+	at com.iselect.tests.GlobalHomePageTest.testLinkedInLink(GlobalHomePageTest.java:747)
+
+com.iselect.tests.GlobalHomePageTest.testPersonalLoansFinanceButtonHover  Time elapsed: 35.66 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Compare Personal Loans*']"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e450c0c019ca1868d8eefd0aa6487d54, findElement {using=xpath, value=//h1[text()='Compare Personal Loans*']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62866/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e450c0c019ca1868d8eefd0aa6487d54
+	at com.iselect.tests.GlobalHomePageTest.testPersonalLoansFinanceButtonHover(GlobalHomePageTest.java:91)
+
+com.iselect.tests.GlobalHomePageTest.testclickOnCarLoansInBottomMenu  Time elapsed: 34.29 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8336aa8f505d62a7823719acd1f5344c, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53195/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8336aa8f505d62a7823719acd1f5344c
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCarLoansInBottomMenu(GlobalHomePageTest.java:1691)
+
+com.iselect.tests.GlobalHomePageTest.testclickOnCreditCardsInBottomMenu  Time elapsed: 34.287 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a599e8c912e5e6076ba9a43e32c754b, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54622/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a599e8c912e5e6076ba9a43e32c754b
+	at com.iselect.tests.GlobalHomePageTest.testclickOnCreditCardsInBottomMenu(GlobalHomePageTest.java:1697)
+
+com.iselect.tests.GlobalHomePageTest.testclickOnPersonalLoansInBottomMenu  Time elapsed: 34.359 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1"}
+  (Session info: headless chrome=96.0.4664.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'A3864L', ip: '10.5.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d1887d89730044e8052a43f459e909d, findElement {using=xpath, value=//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\KARTHI~1.KAL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60758/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1887d89730044e8052a43f459e909d
+	at com.iselect.tests.GlobalHomePageTest.testclickOnPersonalLoansInBottomMenu(GlobalHomePageTest.java:1685)
+

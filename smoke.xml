@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="iSelect">
+	
+	<listeners>
+		<listener
+			class-name="com.iselect.utils.AnnotationTransformer" />
+	</listeners>
+
+	<test name="iSelect Smoke Testing">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.iselect.tests.GlobalHomePageTest">
+			</class> <!-- com.iselect.tests.GlobalHomePageTest -->
+		</classes>
+	</test>
+</suite>	
