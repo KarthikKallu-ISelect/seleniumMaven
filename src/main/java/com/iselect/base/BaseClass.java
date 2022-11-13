@@ -98,7 +98,7 @@ public class BaseClass {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			//WebDriverManager.chromedriver().setup();
 			try {
-				driver=new RemoteWebDriver(new URL("http:192.168.0.8:4444"),options);
+				driver=new RemoteWebDriver(new URL("http://192.168.0.8:4444"),options);
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
