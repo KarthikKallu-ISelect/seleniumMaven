@@ -14,8 +14,12 @@ public class GlobalHomePageTest extends BaseClass {
 
 	@Test(groups = { "Smoke" })
 	public void testLifeInsuranceButton() {
-
-		Assert.assertTrue(gpage.verifyLifeInsuranceButton());
+                driver.get("https://www.saucedemo.com/"); // url navigation
+		driver.manage().window().maximize(); // maximize window
+		driver.findElement(By.id("user-name")).sendKeys("standard_user"); // enter input
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.id("login-button")).click(); // click
+		driver.findElement(By.name("add-to-cart-sauce-labs-backpack")).click();
 	}
 	/*
 
@@ -365,7 +369,7 @@ public class GlobalHomePageTest extends BaseClass {
 	public void testBenefitsofbeingaprivatepatientBtnInHealth() {
 
 		Assert.assertEquals(gpage.clickBenefitsOfPrivatePatientBtnInHealth(),
-				"What’s so good about being a private patient?");
+				"WhatÂ’s so good about being a private patient?");
 	}
 
 	@Test
@@ -422,7 +426,7 @@ public class GlobalHomePageTest extends BaseClass {
 	@Test
 	public void testLifeInsFAQsBtnInLifeSection() {
 
-		Assert.assertEquals(gpage.clickLifeInsuranceFAQsInLife(), "Life Insurance – Frequently Asked Questions");
+		Assert.assertEquals(gpage.clickLifeInsuranceFAQsInLife(), "Life Insurance Â– Frequently Asked Questions");
 	}
 
 	@Test
@@ -864,7 +868,7 @@ public class GlobalHomePageTest extends BaseClass {
 		String url = driver.getCurrentUrl() + "health-insurance/";
 		driver.get(url);
 		Assert.assertEquals(gpage.clickHealthFundsReadMoreInHealth(),
-				"Health Funds: Learn more about iSelect’s participating health insurers");
+				"Health Funds: Learn more about iSelectÂ’s participating health insurers");
 	}
 
 	@Test
@@ -1006,7 +1010,7 @@ public class GlobalHomePageTest extends BaseClass {
 	@Test
 	public void testclickOnAHomeOwnersGuideToHomeAndContentsInsurance() {
 		Assert.assertEquals(gpage.clickOnAHomeOwnersGuideToHomeAndContentsInsurance(),
-				"A Home Owner’s Guide To Home & Contents Insurance");
+				"A Home OwnerÂ’s Guide To Home & Contents Insurance");
 	}
 
 	@Test
@@ -1153,7 +1157,7 @@ public class GlobalHomePageTest extends BaseClass {
 
 	@Test
 	public void testclickOnReviewingPetInsurance() {
-		Assert.assertEquals(gpage.clickOnReviewingPetInsurance(), "Reviewing Pet Insurance – What You Should Look For");
+		Assert.assertEquals(gpage.clickOnReviewingPetInsurance(), "Reviewing Pet Insurance Â– What You Should Look For");
 	}
 
 	@Test
@@ -1570,7 +1574,7 @@ public class GlobalHomePageTest extends BaseClass {
 	@Test
 	public void testclickOnProvidersBtn() {
 		Assert.assertEquals(gpage.clickOnProvidersButton(),
-				"Mobile – Participating Providers");
+				"Mobile Â– Participating Providers");
 	}
 	
 	@Test
