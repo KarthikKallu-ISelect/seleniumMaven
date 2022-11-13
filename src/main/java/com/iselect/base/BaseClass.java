@@ -94,7 +94,7 @@ public class BaseClass {
 		String browser = p.getProperty("browser");
 		if (browser.equalsIgnoreCase("Chrome")) {
 			//WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);
+			driver = new RemoteWebDriver(new Url("http://localhost:4444"),options);
 		} else if (browser.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
