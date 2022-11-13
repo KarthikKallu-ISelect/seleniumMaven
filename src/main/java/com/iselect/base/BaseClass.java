@@ -93,7 +93,7 @@ public class BaseClass {
 		options.addArguments("start-maximized");
 		String browser = p.getProperty("browser");
 		if (browser.equalsIgnoreCase("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
