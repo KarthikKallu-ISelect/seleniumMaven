@@ -3,6 +3,7 @@ package com.iselect.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.iselect.base.BaseClass;
+import org.openqa.selenium.By;
 
 public class GlobalHomePageTest extends BaseClass {
 
