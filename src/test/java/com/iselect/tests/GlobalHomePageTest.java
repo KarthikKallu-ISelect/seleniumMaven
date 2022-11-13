@@ -10,7 +10,11 @@ public class GlobalHomePageTest extends BaseClass {
 	@Test(groups = { "Smoke" })
 	public void testHealthInsuranceButton() {
 
-		Assert.assertTrue(gpage.verifyHealthInsuranceButton());
+		 driver.get("https://www.saucedemo.com/"); // url navigation
+		driver.manage().window().maximize(); // maximize window
+		driver.findElement(By.id("user-name")).sendKeys("standard_user"); // enter input
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		
 	}
 
 	@Test(groups = { "Smoke" })
