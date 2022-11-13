@@ -29,6 +29,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URL;
 import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -94,7 +96,12 @@ public class BaseClass {
 		String browser = p.getProperty("browser");
 		if (browser.equalsIgnoreCase("Chrome")) {
 			//WebDriverManager.chromedriver().setup();
-			driver = new RemoteWebDriver(new Url("http://localhost:4444"),options);
+			try {
+				driver=new RemoteWebDriver(new Url("http://localhost:4444"),options);
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} else if (browser.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
